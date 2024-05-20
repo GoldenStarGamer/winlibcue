@@ -2,6 +2,10 @@
 
 # Overview
 
+Extremely janky port by Starman
+
+**DO NOT DELETE GETOPT.h, GETOPT.c AND UNISTD.h FROM THE BIN FOLDER, THEY ARE PORTS OF UNIX-EXCLUSIVE LIBRARIES**
+
 libcue provides an API for parsing and extracting data from [CUE sheets](https://en.wikipedia.org/wiki/Cue_sheet_%28computing%29).
 
 libcue was originally forked from [cuetools](https://github.com/svend/cuetools) and then enhanced to add additional features.
@@ -18,10 +22,8 @@ NOTE: Use `-DBUILD_SHARED_LIBS=ON` to build as a shared library.
 mkdir bin
 cd bin
 cmake -DCMAKE_INSTALL_PREFIX=/usr/local -DCMAKE_BUILD_TYPE=Release ../
-make
-make test
-make install
 ```
+open libcue.sln in visual studio
 
 # Contributing
 
